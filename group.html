@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Группа ВТиПО-11</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Основной контейнер */
+.container {
+    display: flex;
+    max-width: 1000px;
+    margin: 40px auto;
+    background: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* Левая часть (фото) */
+.left {
+    flex: 2;
+}
+
+.left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Правая часть */
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Цветные блоки */
+.block {
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Цвета как на картинке */
+.c1 { background: #a58aa3; }
+.c2 { background: #c7becb; color: #333; }
+.c3 { background: #9fbad4; }
+.c4 { background: #7f90c0; }
+.c5 { background: #4f5a7f; }
+
+/* Контент */
+.content {
+    padding: 20px;
+}
+
+/* Список */
+ul {
+    padding-left: 20px;
+}
+
+a {
+    color: #4f5a7f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Таблица */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background: #7f90c0;
+    color: white;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Фото -->
+    <div class="left">
+        <img src="group.jpg" alt="Фото группы">
+    </div>
+
+    <!-- Правая часть -->
+    <div class="right">
+
+        <div class="block c1">ВТиПО-11</div>
+        <div class="block c2">IN COLOR BALANCE</div>
+        <div class="block c3"></div>
+        <div class="block c4"></div>
+        <div class="block c5"></div>
+
+    </div>
+
+</div>
+
+<div class="content">
+
+<h2>Список студентов</h2>
+<ul>
+    <li>Айдаров Ербол</li>
+    <li>Айдархан Нұрасыл</li>
+    <li>Айтуаров Нуржас</li>
+    <li>Акбаров Артур</li>
+    <li>Ергеш Балнұр</li>
+    <li>Олжабай Данеля</li>
+    <li>Раушан Темірлан</li>
+    <li><a href="zhadyra.html">Рахимжанова Жадыра</a></li>
+</ul>
+
+<h2>Таблица</h2>
+<table>
+    <tr>
+        <th>№</th>
+        <th>Имя</th>
+        <th>Регион</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Айдаров Ербол</td>
+        <td>Туркестан</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Айтуаров Нуржас</td>
+        <td>Узбекистан</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Рахимжанова Жадыра</td>
+        <td>Абай область</td>
+    </tr>
+</table>
+
+</div>
+
+</body>
+</html>
