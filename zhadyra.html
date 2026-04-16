@@ -2,48 +2,103 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
-<title>Обо мне</title>
+<title>Zhadyra</title>
 
 <style>
 body {
-    font-family: Arial;
-    background: #f4f4f4;
-    text-align: center;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #ece9f1, #dfe7f5);
 }
 
+/* Карточка */
 .card {
+    max-width: 350px;
+    margin: 80px auto;
     background: white;
+    border-radius: 20px;
     padding: 30px;
-    margin: 50px auto;
-    width: 300px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    animation: fadeIn 1s ease;
 }
 
-img {
-    width: 150px;
+/* Фото */
+.card img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
     border-radius: 50%;
+    border: 5px solid #a58aa3;
+    margin-bottom: 15px;
 }
 
+/* Имя */
 h1 {
+    margin: 10px 0;
     color: #4f5a7f;
 }
 
+/* Текст */
+p {
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Блок информации */
+.info {
+    margin-top: 15px;
+    padding: 10px;
+    background: #f7f8fc;
+    border-radius: 10px;
+}
+
+/* Кнопка */
 a {
-    color: #7f90c0;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #7f90c0;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    background: #4f5a7f;
+    transform: scale(1.05);
+}
+
+/* Анимация */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 </style>
+
 </head>
 
 <body>
 
 <div class="card">
-    <img src="C:\Users\user\Desktop\томи\IMG_7954.HEIC" alt="Фото">
-    <h1>Жадыра</h1>
-    <p>Группа: ВТиПО-11</p>
-    <p>Абай область</p>
-    <p>Я изучаю программирование 💻</p>
 
-    <a href="index.html">Назад</a>
+    <img src="me.jpg" alt="Zhadyra">
+
+    <h1>Жадыра</h1>
+
+    <div class="info">
+        <p><b>Группа:</b> ВТиПО-11</p>
+        <p><b>Регион:</b> Абай область</p>
+        <p><b>Село:</b> Каратал</p>
+        <p><b>Дата рождения:</b> 08.11.2007</p>
+    </div>
+
+    <p>Я студентка IT-специальности 💻  
+    Изучаю программирование и веб-разработку.</p>
+
+    <a href="index.html">⬅ Назад</a>
+
 </div>
 
 </body>
