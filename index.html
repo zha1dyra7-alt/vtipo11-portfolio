@@ -97,12 +97,16 @@ body {
     margin: 30px auto;
     padding: 25px;
 
-    background: rgba(255,255,255,0.95);
+    /* 👇 ПРОЗРАЧНЫЙ GLASS */
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
     border-radius: 15px;
 
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
-
 /* HEADINGS */
 h2 {
     border-left: 6px solid #3b82f6;
