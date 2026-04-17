@@ -24,26 +24,42 @@ body {
 }
 
 /* Фото */
+.left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e0e7ff;
+}
+
 .left img {
-    width: 50%;
-    height: 50%;
+    width: 80%;
+    max-width: 350px;
+    border-radius: 20px;
     object-fit: cover;
+     padding: 5px;
+    background: linear-gradient(135deg, #3b82f6, #1e3a8a);
+    
+    /* Красота 👇 */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    border: 4px solid white;
+    transition: 0.3s;
 }
 
-/* Правая часть */
-.right {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 50%;
+/* эффект при наведении */
+.left img:hover {
+    transform: scale(1.05);
 }
-
-.block {
+    .block {
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 600;
     font-size: 18px;
+    padding: 20px;
+    text-align: center;
 }
+    
 
 /* Цвета в университетском стиле */
 .c1 {
