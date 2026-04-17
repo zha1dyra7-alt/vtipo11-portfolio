@@ -45,7 +45,12 @@ body {
     align-items: center;
     justify-content: center;
 
-    background: linear-gradient(135deg, #3b82f6, #1e3a8a);
+    /* 👇 GLASS BACKGROUND */
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .left img {
