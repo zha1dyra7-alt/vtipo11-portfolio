@@ -133,24 +133,30 @@ ul {
     padding: 0;
 }
 
+/* 🔮 GLASS ITEM */
 ul li {
-    background: white;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
     margin: 10px 0;
     padding: 12px;
-    border-radius: 10px;
+    border-radius: 12px;
 
-    color: #1e293b;
+    color: white;
     font-weight: 500;
 
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+
     transition: 0.3s;
 }
 
+/* ✨ hover эффект */
 ul li:hover {
-    background: #eef2ff;
-    transform: translateX(5px);
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateX(6px);
 }
-
 /* CONTACT LIST */
 .contact-list li {
     display: flex;
